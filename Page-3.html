@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Booking Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">	
+	</head>
+	<body>
+		<div class="wrapper" >
+			<div class="inner">
+				<form action="">
+					<h3 style="font-size: 18px;">Upload IC</h3>
+					<div class="form-wrapper" >
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+              <div class="drag-text">
+                <h3 style="font-size: 16px;">Upload IC</h3>
+              </div>
+            </div>
+            <div class="file-upload-content">
+              <img class="file-upload-image" src="#" alt="your image" />
+            </div>
+					
+					</div>
+          <h3 style="font-size: 18px;">Upload Signature</h3>
+					<div class="form-wrapper" >
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+              <div class="drag-text">
+                <h3 style="font-size: 16px;">Upload Signature</h3>
+              </div>
+            </div>
+            <div class="file-upload-content">
+              <img class="file-upload-image" src="#" alt="your image" />
+            </div>
+					
+					</div>
+					
+				</form>
+				<div class="buttons" style="display: flex; gap: 20px;     padding: 0px 20px 20px 20px;">
+						<div >
+							<a href="Page-2.html"  style="width: 61%; text-decoration: none;">
+								<button  class="btn-1">Back</button>
+							</a>
+						</div>
+						<a href="#" style="    width: 61%; text-decoration: none;">
+							<button id="buttons">Done</button>
+						</a>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+  <script>
+    function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+  </script>
+</html>
