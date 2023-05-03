@@ -27,6 +27,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.area-1, .area-2{
+  flex-grow: 1;
+  flex-basis: 0;
+}
 .file-upload-content {
   display: none;
   text-align: center;
