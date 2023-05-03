@@ -462,6 +462,6 @@ li.active:before {
   .wrapper{
     display: flex;
     overflow-y: hidden;
-    min-height: 50vh;
+    min-height: 80vh;
   }
 }
