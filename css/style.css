@@ -467,4 +467,7 @@ li.active:before {
     overflow-y: hidden;
     min-height: 80vh;
   }
+  h3{
+    margin-bottom: 40px;
+  }
 }
