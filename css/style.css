@@ -456,9 +456,12 @@ li.active:before {
   .form-control {
     padding: 0 6px;
   }
-  /* .form-wrapper {
-    justify-content: space-around;
-  } */
+   .form-wrapper {
+    margin-bottom: 40px;
+  } 
+     .form-wrapper-0 {
+    margin-bottom: 40px;
+  } 
   .wrapper{
     display: flex;
     overflow-y: hidden;
