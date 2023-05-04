@@ -54,7 +54,7 @@ body {
 
 .image-upload-wrap {
 
-  border: 2px solid #1c1a45;
+  border: 2px solid #00007f;
   position: relative;
   width: 100%;
   border-radius: 5px;
@@ -243,8 +243,8 @@ select option[value=""][disabled] {
   border: none;
   border: 2px solid;
   background: none;
-  border-color: #1c1a45;
-  color: #1c1a45;
+  border-color: #00007f;
+  color: #00007f;
   width: 118px;
   height: 40px;
   margin: auto;
@@ -277,7 +277,7 @@ select option[value=""][disabled] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #1c1a45;
+  background: #00007f;
   color: white;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
